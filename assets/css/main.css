@@ -2729,6 +2729,25 @@ input, select, textarea {
 			.features article .inner > :last-child {
 				margin-bottom: 0;
 			}
+			.features article .inner ul {
+				list-style-type: none;
+				padding: 0;
+			  }
+			  
+			.features article .inner li {
+				display: inline-block;
+				list-style: disc; 
+
+			  }
+
+			.features article .inner li::before {
+				content: "\2605"; 
+				font-size: 1.15em; 
+				padding-right: 0.2em; 
+			  }
+
+
+
 
 /* Header */
 
@@ -2895,6 +2914,8 @@ input, select, textarea {
 			line-height: 1em;
 			list-style: none;
 			padding: 0;
+			display: flex;
+			justify-content: center;
 		}
 
 			#footer .copyright li {
@@ -3218,6 +3239,8 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 			}
+			
+			  
 
 		/* Header */
 
